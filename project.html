@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FraudLens AI — Real-Time Financial Fraud Intelligence (HNX26PSI04)</title>
+  <meta name="description" content="Real-time financial fraud intelligence platform detecting coordinated fraud rings, behavioral anomalies, and cross-account relationship patterns." />
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/graph.css" />
+  <link rel="stylesheet" href="styles/login.css" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation Shell -->
+    <div id="sidebarContainer"></div>
+
+    <!-- Main Content Area -->
+    <div class="main-wrapper">
+      <!-- Top Dashboard Header Shell -->
+      <div id="headerContainer"></div>
+
+      <!-- Dynamic Page Container -->
+      <main class="page-content-wrapper" id="appContent">
+        <!-- Injected dynamically by FraudLensApp -->
+      </main>
+
+      <!-- Platform Footer -->
+      <div id="footerContainer"></div>
+    </div>
+  </div>
+
+  <!-- Modal & Toast Backdrop Containers -->
+  <div id="modalBackdrop" class="fraudlens-modal-backdrop"></div>
+  <div id="modalContainer" class="fraudlens-modal-container"></div>
+
+  <!-- 1. Data Models -->
+  <script src="data/mockData.js"></script>
+  <script src="data/demoScenario.js"></script>
+
+  <!-- 2. Authentication & Security Services -->
+  <script src="auth/otp.js"></script>
+  <script src="auth/auth.js"></script>
+
+  <!-- 3. Utilities & Risk Engine -->
+  <script src="utilities/riskEngine.js"></script>
+  <script src="utilities/simulator.js"></script>
+
+  <!-- 4. Reusable UI Components -->
+  <script src="components/toast.js"></script>
+  <script src="components/modal.js"></script>
+  <script src="components/charts.js"></script>
+  <script src="components/networkGraph.js"></script>
+  <script src="components/header.js"></script>
+  <script src="components/sidebar.js"></script>
+
+  <!-- 5. Platform Pages -->
+  <script src="pages/loginPage.js"></script>
+  <script src="pages/landingPage.js"></script>
+  <script src="pages/overviewPage.js"></script>
+  <script src="pages/transactionsPage.js"></script>
+  <script src="pages/fraudRingsPage.js"></script>
+  <script src="pages/networkPage.js"></script>
+  <script src="pages/accountsPage.js"></script>
+  <script src="pages/explainableAiPage.js"></script>
+  <script src="pages/alertsPage.js"></script>
+  <script src="pages/settingsPage.js"></script>
+
+  <!-- 6. App Router & Bootstrap -->
+  <script src="app.js"></script>
+</body>
+</html>
